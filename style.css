@@ -7,30 +7,398 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "SUSE";
 }
-.page1{
-    width: 100%;
-    height: 100%;
+.page1 {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top right, #d9a7c7, #fffcdc, #36D1DC80);
+}
+nav {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #ffffff30;
+  backdrop-filter: blur(10px);
+  border-radius: 60px;
+  margin: 20px auto;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%);
+}
+nav .logo{
+  font-size: 20px;
+}
+.nav-pills {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.nav-pills li{
+  font-weight: 600;
+}
+button {
+  padding: 10px 30px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+button > i{
+  font-weight: 100;
+  font-size: 30px;
+}
+header{
+  width: 100%;
+  display: flex;
+  padding-top: 15%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header h1 {
+  font-size: 65px;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: 50%;
+  text-align: center;
+}
+header h3{
+  font-weight: 400;
+  font-size: 20px;
+}
+header span{
+  font-size: 13px ;
+}
+.page2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5%;
+  padding-top: 10%;
+}
+.page2 span{
+  color: #7b7b7b;
+  font-weight: 600;
+}
+.page2 h2{
+  font-size: 50px;
+}
+.page2 > p{
+  width: 55%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+.page2 .cards, .page5 .cards{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(2, 1fr);
+ background-color: #fff1e3;
+ gap: 30px;
+ padding: 30px;
+ border: 2px dashed #ffcf9e;
+ border-radius: 20px;
+}
+.cards .card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards .card i{
+  font-size: 50px;
+}
+.cards .card h3{
+  font-size: 23px;
+}
+.page3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5%;
+  padding-top: 10%;
+}
+.page3 h1{
+  font-size: 60px;
+}
+.page3 > p{
+  width: 63%;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10%;
+}
+.page3 .cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+.page3 .cards .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.page3 .cards .card p{
+  width: 400px;
+  text-align: center;
+}
+.page3 button{
+  margin-top: 5%;
+}
+.page4{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 5%;
+  padding-top: 10%;
+}
+.page4 h1{
+  font-size: 60px;
+}
+.page4 p{
+  font-size: 18px;
+  margin-bottom: 4%;
+}
+.page4 .cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 
 }
-nav{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
+.page4 .cards .card{
+  background-color: #fff1e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 30px;
+  border-radius: 20px;
+  position: relative;
 }
-.nav-pills{
-    display: flex;
-    list-style: none;
-    gap: 30px;
+.page4 .cards .card p{
+  width: 490px;
+  height: 120px;
 }
-button{
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
+.page4 .cards .card i{
+  position: absolute;
+  top: -25px;
+}
+.page5{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #fff1e3;
+  padding-bottom: 10%;
+}
+.page5 .container{
+  background-color: #fff1e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10%;
+}
+.container h1{
+  font-size: 60px;
+  line-height: 10px;
+}
+.container span{
+  font-size: 12px;
+}
+.container .cards{
+  border: none;
+}
+.container .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner{
+  background-image: linear-gradient(to bottom right, #fffcdc, #ff8ed6);
+  width: 90%;
+  padding: 5% 10%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  
+}
+.banner h1{
+  font-size: 50px;
+  text-align: center;
+}
+.page6{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.page6 .content-box{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5%;  
+  gap: 60px;
+}
+.content-box h2{
+  font-size: 30px;
+  padding-bottom: 5%;
+}
+.content-box p{
+  font-size: 18px;
+}
+.content-box .box{
+  border-radius: 20px;
+  width: 90%;
+  color: #747474;
+  padding: 20px;
+}
+.content-box .e-commerce{
+  background-color: rgba(200, 232, 245, 0.774);
+  border-left: 2px solid skyblue;
+  color: #000;
+}
+.page5 .image-box{
+  width: 40%;
+}
+.image-box img{
+  width: 90%;
+
+}
+.page7{
+  width: 100%;
+}
+.page7 .pricing{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgba(225, 246, 255, 0.635);
+  padding: 10% 5%;
+}
+.page7 h1{
+  font-size: 60px;
+  line-height: 10px;
+}
+.pricing > span{
+  font-size: 20px;
+}
+.pricing .cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.pricing .cards .card{
+  width: 33.3%;
+  padding: 5%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;  
+  position: relative;
+  border-right: 1px solid #ccc;
+}
+.pricing .cards .card h6{
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50% , 20%);
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+.cards .card h1 sub{
+  font-weight: 500;
+}
+.cards .card h4{
+  font-size: 25px;
+}
+.FAQ{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 5% 10%;
+  background-color: #fff1e3;
+}
+.FAQ span{
+  font-size: 20px;
+}
+.FAQ ul{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 5%;
+}
+.FAQ ul li{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+  list-style: none;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  border: 1px solid #000;
+}
+.FAQ button{
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
 }
